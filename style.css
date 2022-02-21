@@ -3,15 +3,116 @@
 :root {
   --section-red: #d94e4e;
   --text: #591e23;
+  --darker-red: #b94c4c;
   --t-white: #ffff;
   --red-opacity: #d95f5f;
   --links: #f29999;
-  --white-space: 10rem;
+  --white-space: 25rem;
   --main-font: proxima-nova, sans-serif;
   --font-weight: 700;
+  --gap: 1rem;
+  --gap-header: 3rem;
+  --padding: 2rem;
+  --font-size-big: 5rem;
+}
+* {
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+  font-family: var(--main-font);
+}
+body {
+  background-color: var(--section-red);
+  margin: 0;
 }
 
-body {
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+}
+header {
+  color: var(--t-white);
+}
+
+/* setting colors and sections*/
+.red_space {
+  background-color: var(--section-red);
+  color: var(--t-white);
+}
+
+.red_space_content,
+.text_space_content,
+header {
   margin-left: var(--white-space);
   margin-right: var(--white-space);
+}
+
+.text_space {
+  background-color: var(--t-white);
+}
+
+footer {
+  background-color: var(--t-white);
+}
+
+hr {
+  color: var(--t-white);
+}
+
+/* nav bar */
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--gap-header);
+  padding: 0;
+  background-color: var(--section-red);
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: var(--gap);
+  padding: 0;
+}
+
+li {
+  background-color: var(--red-opacity);
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+
+.dark_hr {
+  color: var(--red-opacity);
+}
+
+/* timer */
+.timer {
+  background-color: var(--red-opacity);
+  padding: var(--padding);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.pomodoro_type {
+  display: flex;
+  flex-direction: row;
+  gap: var(--gap);
+  padding: 0.5rem;
+}
+.active {
+  background-color: var(--darker-red);
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+
+  border-radius: 5px;
+}
+
+.time_left {
+  font-size: var(--font-size-big);
 }

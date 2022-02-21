@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Pomofocus</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -17,87 +17,96 @@
           <li>Login</li>
         </ul>
       </nav>
+
+      <hr class="dark_hr" />
     </header>
     <main>
       <section class="red_space">
-        <div class="timer">
-          <span>Pomodoro</span> <span>Short Break</span> <span>Long Break</span>
-          <h1>24:59</h1>
-          <button>START</button>
-        </div>
-        <div class="details">
-          <p>WORKING ON</p>
-          <p>Milk the cat</p>
-        </div>
-        <div class="tasks">
-          <h2>Tasks</h2>
-          <button>...</button>
-          <hr />
-          <div class="task_1">
+        <section class="red_space_content">
+          <div class="timer">
+            <div class="pomodoro_type">
+              <span class="active">Pomodoro</span> <span>Short Break</span>
+              <span>Long Break</span>
+            </div>
+            <h1 class="time_left">24:59</h1>
+            <button>START</button>
+          </div>
+          <div class="details">
+            <p>WORKING ON</p>
             <p>Milk the cat</p>
-            <p>0/1</p>
+          </div>
+          <div class="tasks">
+            <h2>Tasks</h2>
             <button>...</button>
+            <hr class="long_hr" />
+            <div class="task_1">
+              <p>Milk the cat</p>
+              <p>0/1</p>
+              <button>...</button>
+            </div>
+            <div class="task_2">
+              <p>Code this</p>
+              <p>0/1</p>
+              <button>...</button>
+            </div>
+            <div class="task_add">
+              <p>Add task</p>
+            </div>
+            <div class="estimate">
+              <p>Est:</p>
+              <span>1</span>
+              <p>Act:</p>
+              <span>0</span>
+              <p>Finish at</p>
+              <span>13:57</span>
+            </div>
           </div>
-          <div class="task_2">
-            <p>Code this</p>
-            <p>0/1</p>
-            <button>...</button>
-          </div>
-          <div class="task_add">
-            <p>Add task</p>
-          </div>
-          <div class="estimate">
-            <p>Est:</p>
-            <span>1</span>
-            <p>Act:</p>
-            <span>0</span>
-            <p>Finish at</p>
-            <span>13:57</span>
-          </div>
-        </div>
+        </section>
       </section>
       <section class="text_space">
-        <h1>An online Pomodoro Timer to boost your productivity</h1>
-        <h2>What is Pomofocus?</h2>
-        <hr />
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio
-          asperiores id nobis repudiandae itaque esse dolores deserunt iure,
-          provident molestias ea laborum, corrupti alias non facere? Illum quod
-          rem neque.
-        </p>
-        <h2>What is Pomodoro Technique?</h2>
-        <hr />
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium
-          reiciendis optio minus similique amet autem tenetur consectetur
-          eligendi repudiandae accusamus ab laborum aut porro, eaque officiis,
-          repellat quisquam sint numquam!
-        </p>
-        <h2>How to use the Pomodoro Timer?</h2>
-        <hr />
-        <ol>
-          <li>Add tasks to work on today</li>
-          <li>Set estimate pomodoros (1=25min of work) for each tasks</li>
-          <li>Select a task to work on</li>
-          <li>Start timer and focus on the task for 25 minutes</li>
-          <li>Take a break for 5 minutes when the alarm ring</li>
-          <li>Iterate 3-5 until you finish the tasks</li>
-        </ol>
-        <h2>Features</h2>
-        <hr />
-        <ul>
-          <li>Responsive design that works with desktop and mobile</li>
-          <li>
-            Color transition to switch moods between work time and rest time
-          </li>
-          <li>Audio notification at the end of a timer period</li>
-          <li>Customizable timer intervals to suit your preference</li>
-        </ul>
+        <section class="text_space_content">
+          <h1>An online Pomodoro Timer to boost your productivity</h1>
+          <h2>What is Pomofocus?</h2>
+          <hr class="short_hr" />
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio
+            asperiores id nobis repudiandae itaque esse dolores deserunt iure,
+            provident molestias ea laborum, corrupti alias non facere? Illum
+            quod rem neque.
+          </p>
+          <h2>What is Pomodoro Technique?</h2>
+          <hr class="short_hr" />
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium
+            reiciendis optio minus similique amet autem tenetur consectetur
+            eligendi repudiandae accusamus ab laborum aut porro, eaque officiis,
+            repellat quisquam sint numquam!
+          </p>
+          <h2>How to use the Pomodoro Timer?</h2>
+          <hr class="short_hr" />
+          <ol>
+            <li>Add tasks to work on today</li>
+            <li>Set estimate pomodoros (1=25min of work) for each tasks</li>
+            <li>Select a task to work on</li>
+            <li>Start timer and focus on the task for 25 minutes</li>
+            <li>Take a break for 5 minutes when the alarm ring</li>
+            <li>Iterate 3-5 until you finish the tasks</li>
+          </ol>
+          <h2>Features</h2>
+          <hr class="short_hr" />
+          <ul>
+            <li>Responsive design that works with desktop and mobile</li>
+            <li>
+              Color transition to switch moods between work time and rest time
+            </li>
+            <li>Audio notification at the end of a timer period</li>
+            <li>Customizable timer intervals to suit your preference</li>
+          </ul>
+        </section>
       </section>
     </main>
     <footer>
-      <nav>
+      <nav class="footer_nav">
         <ul>
           <li>HOME</li>
           <li>PRIVACY</li>
