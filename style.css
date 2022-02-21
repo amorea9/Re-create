@@ -1,0 +1,17 @@
+@import url("https://use.typekit.net/nao5hsv.css");
+
+:root {
+  --section-red: #d94e4e;
+  --text: #591e23;
+  --t-white: #ffff;
+  --red-opacity: #d95f5f;
+  --links: #f29999;
+  --white-space: 10rem;
+  --main-font: proxima-nova, sans-serif;
+  --font-weight: 700;
+}
+
+body {
+  margin-left: var(--white-space);
+  margin-right: var(--white-space);
+}
