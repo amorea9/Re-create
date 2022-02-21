@@ -9,11 +9,12 @@
   --links: #f29999;
   --white-space: 25rem;
   --main-font: proxima-nova, sans-serif;
-  --font-weight: 700;
+  --font-weight: 800;
   --gap: 1rem;
   --gap-header: 3rem;
   --padding: 2rem;
-  --font-size-big: 5rem;
+  --font-size-big: 6rem;
+  --greyed-out: rgb(187, 184, 184);
 }
 * {
   box-sizing: border-box;
@@ -21,12 +22,16 @@
   text-decoration: none;
   font-family: var(--main-font);
 }
+button {
+  cursor: pointer;
+}
 body {
   background-color: var(--section-red);
   margin: 0;
 }
 
 main {
+  padding-top: var(--padding);
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
@@ -41,11 +46,14 @@ header {
   color: var(--t-white);
 }
 
-.red_space_content,
 .text_space_content,
 header {
   margin-left: var(--white-space);
   margin-right: var(--white-space);
+}
+.red_space_content {
+  margin-left: 27rem;
+  margin-right: 27rem;
 }
 
 .text_space {
@@ -93,11 +101,14 @@ li {
 /* timer */
 .timer {
   background-color: var(--red-opacity);
-  padding: var(--padding);
+
   display: flex;
   flex-direction: column;
+  padding: var(--gap);
+  gap: var(--gap);
   justify-content: space-evenly;
   align-items: center;
+  border-radius: 4px;
 }
 .pomodoro_type {
   display: flex;
@@ -115,4 +126,145 @@ li {
 
 .time_left {
   font-size: var(--font-size-big);
+  padding: 0;
+  margin: 0;
+}
+
+.button_start {
+  padding: var(--gap);
+  padding-left: var(--gap-header);
+  padding-right: var(--gap-header);
+  border: none;
+  border-radius: 3px;
+  font-size: 1.3rem;
+  color: var(--section-red);
+  font-weight: var(--font-weight);
+}
+.button_start:hover {
+  color: var(--t-white);
+  background-color: var(--section-red);
+  border: 2px solid var(--t-white);
+}
+
+/* tasks*/
+.details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  gap: 0.5rem;
+  padding-top: 0.5rem;
+}
+.details p {
+  padding-top: 0;
+  margin: 0;
+}
+.details p:first-child {
+  color: var(--links);
+}
+
+.task_header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.task_header > button {
+  width: 20px;
+  height: 20px;
+  color: var(--t-white);
+  background-color: var(--links);
+  border: none;
+  border-radius: 3px;
+}
+.task_header > h2 {
+  margin: 0;
+}
+.task_1,
+.task_2 {
+  background-color: var(--t-white);
+  border-radius: 3px;
+  color: black;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+  font-weight: var(--font-weight);
+}
+
+.start,
+.end {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: var(--gap);
+  padding-right: var(--gap);
+  padding-left: var(--gap);
+}
+
+.check {
+  background-color: var(--red-opacity);
+  border-radius: 50%;
+  line-height: var(--padding);
+  width: var(--padding);
+  height: var(--padding);
+  text-align: center;
+  font-size: var(--gap);
+  color: var(--t-white);
+}
+.check_grey {
+  background-color: rgb(223, 221, 221);
+}
+.task_2 .start p {
+  text-decoration: line-through;
+  color: var(--greyed-out);
+}
+
+.end p {
+  color: var(--greyed-out);
+}
+.end button {
+  width: 20px;
+  height: 20px;
+  color: var(--greyed-out);
+  background-color: var(--t-white);
+  border: 1px solid var(--greyed-out);
+  border-radius: 3px;
+  text-align: center;
+  font-weight: var(--font-weight);
+}
+
+.task_1 {
+  border-left: 5px solid black;
+}
+.task_add {
+  text-align: center;
+  background-color: var(--darker-red);
+  padding: var(--gap);
+  border-radius: 3px;
+  border: 2px dashed var(--links);
+  color: var(--t-white);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+.task_add p {
+  margin: 0;
+}
+.task_add:hover {
+  transform: scale(1.05);
+}
+.task_add div {
+  background-color: var(--t-white);
+  border-radius: 50%;
+  line-height: var(--gap);
+  width: var(--gap);
+  height: var(--gap);
+  text-align: center;
+  font-size: var(--gap);
+  color: var(--red-opacity);
+  font-weight: var(--font-weight);
 }
