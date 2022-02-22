@@ -387,3 +387,70 @@ a:hover {
 a:active {
   color: var(--darker-red);
 }
+/* responsive styling*/
+@media only screen and (max-width: 1350px) {
+  .text_space_content,
+  header {
+    margin-left: 25rem;
+    margin-right: 25rem;
+  }
+  .red_space_content {
+    margin-left: 27rem;
+    margin-right: 27rem;
+  }
+}
+@media only screen and (max-width: 1260px) {
+  .text_space_content,
+  header {
+    margin-left: 20rem;
+    margin-right: 20rem;
+  }
+  .red_space_content {
+    margin-left: 23rem;
+    margin-right: 23rem;
+  }
+}
+@media only screen and (max-width: 1070px) {
+  .text_space_content,
+  header {
+    margin-left: 13rem;
+    margin-right: 13rem;
+  }
+  .red_space_content {
+    margin-left: 15rem;
+    margin-right: 15rem;
+  }
+}
+@media only screen and (max-width: 814px) {
+  .text_space_content,
+  header {
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+  .red_space_content {
+    margin-left: 7rem;
+    margin-right: 7rem;
+  }
+}
+@media only screen and (max-width: 560px) {
+  .text_space_content,
+  header {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+  .red_space_content {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}
+@media only screen and (max-width: 428px) {
+  nav {
+    flex-direction: column;
+    gap: 0;
+  }
+}
+@media only screen and (max-width: 366px) {
+  .pomodoro_type {
+    flex-direction: column;
+  }
+}
