@@ -108,6 +108,17 @@ header nav ul li {
   opacity: 60%;
 }
 
+nav h1 span {
+  letter-spacing: 0.7rem;
+
+  background-color: var(--t-white);
+  border-radius: 50%;
+  line-height: var(--gap);
+  font-size: var(--gap);
+  color: var(--section-red);
+  text-align: center;
+}
+
 /* timer */
 .timer {
   background-color: var(--red-opacity);
@@ -220,11 +231,11 @@ header nav ul li {
 .check {
   background-color: var(--red-opacity);
   border-radius: 50%;
-  line-height: var(--padding);
-  width: var(--padding);
-  height: var(--padding);
+  line-height: var(--gap);
+  width: var(--gap);
+  height: var(--gap);
   text-align: center;
-  font-size: var(--gap);
+  font-size: 0.7rem;
   color: var(--t-white);
 }
 .check_grey {
